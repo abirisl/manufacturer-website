@@ -1,0 +1,52 @@
+[
+    {
+        "_id": 1,
+        "name": "Gear Pinion",
+        "img": "https://i.ibb.co/Nx9JFGJ/picture1.png",
+        "prize": "1950",
+        "quantity": "150",
+        "description": "inion gears and pinion racks feature the same shape and the same sized teeth that are cut along a flat surface at an equal distance apart from each other. Together, these two flat surfaces form a rack with a cylindrical, and the rotational motion becomes converted into a linear motion to generate movement."
+    },
+    {
+        "_id": 2,
+        "name": "Crankshaft",
+        "img": "https://i.ibb.co/sqh7TzX/picture2.jpg",
+        "prize": "1950",
+        "quantity": "150",
+        "description": "The crankshaft is essentially the backbone of the internal combustion engine. The crankshaft is responsible for the proper operation of the engine and converting a linear motion to a rotational motion. Crankshafts should have very high fatigue strength and wear resistance to ensure long service life."
+    },
+
+    {
+        "_id": 3,
+        "name": "Motorcycle Cylinder",
+        "img": "https://i.ibb.co/wprgyGQ/picture5.webp",
+        "prize": "2800",
+        "quantity": "80",
+        "description": "They consist of pistons, a cylinder block and a head, which contains the valve train. The pistons move up and down in the cylinder block, driven by explosions of a fuel-air mixture that has been ignited by a spark. Valves open and close to allow the fuel-air mixture to enter the combustion chamber."
+    },
+    {
+        "_id": 4,
+        "name": "Cylinder Head",
+        "img": "https://i.ibb.co/jTS4sSv/picture4.jpg",
+        "prize": "3200",
+        "quantity": "75",
+        "description": "A cylinder head is the part of an engine that closes the upper ends of the cylinders. When I removed the cylinder head, I found the tops of the pistons and inlet valves covered in a shiny substance. The cylinder head is an intricate casting mated to the top of the cylinder block."
+    },
+    {
+        "_id": 5,
+        "name": "Clutch Kit",
+        "img": "https://i.ibb.co/5G80PqS/picture3.jpg",
+        "prize": "1650",
+        "quantity": "550",
+        "description": "A clutch kit is a group of manual transmission parts that are either purchased as a unit or assembled piecemeal. When bought together, a clutch kit will usually consist of a pressure plate, clutch disc, and a release bearing."
+    },
+    {
+        "_id": 6,
+        "name": "Piston",
+        "img": "https://i.ibb.co/GVrnkVL/picture6.webp",
+        "prize": "550",
+        "quantity": "820",
+        "description": "A piston is a component of reciprocating engines, reciprocating pumps, gas compressors, hydraulic cylinders and pneumatic cylinders, among other similar mechanisms. It is the moving component that is contained by a cylinder and is made gas-tight by piston rings. In an engine."
+    }
+
+]
