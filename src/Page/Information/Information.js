@@ -34,6 +34,14 @@ const Information = () => {
         if (num > 30) {
             setNum(num - 1);
         }
+        else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Sorry, products cannot be ordered below this',
+                footer: '<a href="">Why do I have this issue?</a>'
+            })
+        }
     }
     const handleChange = (e) => {
         setNum(e.target.value);
@@ -48,10 +56,10 @@ const Information = () => {
         const number = event.target.phone.value;
 
         const order = {
-            productId: product._id,
             customerName: name,
             productName: product.name,
-            oreder: user.email,
+            totalPrize: total2,
+            customerEmail: user.email,
             phoneNumber: number
         }
         console.log(order)
@@ -72,7 +80,9 @@ const Information = () => {
                     'Your order succed',
                     'success'
                   )
+                 
                }
+              
             })
 
     }
@@ -109,7 +119,7 @@ const Information = () => {
                         <h4 className='text-xl font-bold mb-2'>Email</h4>
                         <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
                         <h4 className='text-xl font-bold mb-2'>Phone number</h4>
-                        <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
+                        <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" required/>
                         <h4 className='text-xl font-bold mb-2'>Prize</h4>
                         <input type="text" disabled value={product.prize} placeholder="Product quantity" className="input input-bordered w-full max-w-xs" />
                         <h4 className='text-xl font-bold mb-2'>Product quantity</h4>

@@ -23,6 +23,9 @@ const Header = () => {
                 user? <button className="btn btn-active btn-accent" onClick={logOut} >LOG OUT</button> : <Link to='/login'>SIGN IN</Link>
             }
         </li>
+        {
+            user && <li className='my-4 ml-12'>{user?.email.slice(0,10)}</li>
+        }
 
     </>
     return (
