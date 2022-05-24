@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const Product = ({ product }) => {
-    const { _id, name, img, quantity, prize, description } = product
+const Parts = ({ parts }) => {
+    const { _id, name, img, quantity, prize, description } = parts;
     const navigate = useNavigate();
 
     const navigatorProductDetail = id =>{
         navigate(`/product/${id}`)
     }
-    return ( 
+    return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
             <figure>
-                <img src={img} alt="Shoes" />
+                <img src={img} alt="parts" />
                 </figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
@@ -19,11 +19,11 @@ const Product = ({ product }) => {
                 <h5 className='text-lime-300 font-bold'>Quantity: {quantity}</h5>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
-                    <button onClick={() => navigatorProductDetail(_id)} className="btn btn-accent">Buy Now</button>
+                <button onClick={() => navigatorProductDetail(_id)} className="btn btn-accent">Buy Now</button>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Product;
+export default Parts;

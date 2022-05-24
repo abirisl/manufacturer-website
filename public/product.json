@@ -1,6 +1,5 @@
 [
     {
-        "_id": 1,
         "name": "Gear Pinion",
         "img": "https://i.ibb.co/Nx9JFGJ/picture1.png",
         "prize": "1950",
@@ -8,7 +7,6 @@
         "description": "inion gears and pinion racks feature the same shape and the same sized teeth that are cut along a flat surface at an equal distance apart from each other. Together, these two flat surfaces form a rack with a cylindrical, and the rotational motion becomes converted into a linear motion to generate movement."
     },
     {
-        "_id": 2,
         "name": "Crankshaft",
         "img": "https://i.ibb.co/sqh7TzX/picture2.jpg",
         "prize": "1950",
@@ -17,7 +15,6 @@
     },
 
     {
-        "_id": 3,
         "name": "Motorcycle Cylinder",
         "img": "https://i.ibb.co/wprgyGQ/picture5.webp",
         "prize": "2800",
@@ -25,7 +22,6 @@
         "description": "They consist of pistons, a cylinder block and a head, which contains the valve train. The pistons move up and down in the cylinder block, driven by explosions of a fuel-air mixture that has been ignited by a spark. Valves open and close to allow the fuel-air mixture to enter the combustion chamber."
     },
     {
-        "_id": 4,
         "name": "Cylinder Head",
         "img": "https://i.ibb.co/jTS4sSv/picture4.jpg",
         "prize": "3200",
@@ -33,7 +29,6 @@
         "description": "A cylinder head is the part of an engine that closes the upper ends of the cylinders. When I removed the cylinder head, I found the tops of the pistons and inlet valves covered in a shiny substance. The cylinder head is an intricate casting mated to the top of the cylinder block."
     },
     {
-        "_id": 5,
         "name": "Clutch Kit",
         "img": "https://i.ibb.co/5G80PqS/picture3.jpg",
         "prize": "1650",
@@ -41,7 +36,6 @@
         "description": "A clutch kit is a group of manual transmission parts that are either purchased as a unit or assembled piecemeal. When bought together, a clutch kit will usually consist of a pressure plate, clutch disc, and a release bearing."
     },
     {
-        "_id": 6,
         "name": "Piston",
         "img": "https://i.ibb.co/GVrnkVL/picture6.webp",
         "prize": "550",
