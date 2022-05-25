@@ -58,6 +58,7 @@ const Information = () => {
         const order = {
             customerName: name,
             productName: product.name,
+            productQuantity: num,
             totalPrize: total2,
             customerEmail: user.email,
             phoneNumber: number

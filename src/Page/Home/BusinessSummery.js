@@ -10,7 +10,7 @@ import { AiFillLike } from 'react-icons/ai';
 const Projects = () => {
     return (
       <section className="my-24 mx-24">
-        <h1 className="text-center font-semibold text-4xl my-12 text-fuchsia-300">
+        <h1 className="text-center font-semibold text-4xl my-12 text-teal-400">
           Successful Business Overview
         </h1>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center items-center">

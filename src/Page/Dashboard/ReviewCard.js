@@ -6,8 +6,7 @@ import Review from './Review';
 const ReviewCard = () => {
     const [user] = useAuthState(auth)
     const [reviews, setReviews] = useState([]);
-    console.log(reviews)
-
+    
     useEffect(() => {
         fetch(`http://localhost:5000/review?email=${user?.email}`)
             .then(res => res.json())
@@ -15,12 +14,15 @@ const ReviewCard = () => {
 
     }, [user])
     return (
-        <div className='flex justify-center items-center my-12'>
+        <div className='text-center'>
+            <h2 className='text-4xl font-bold text-teal-400'>Our Reviews</h2>
+            <div className='flex justify-center items-center my-12'>
             <div class="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
                 {
-                    reviews.map(review => <Review key={review._id} review={review} user={user}></Review>)
+                    reviews.map(review => <Review key={review._id} review={review}></Review>)
                 }
             </div>
+        </div>
         </div>
     );
 };

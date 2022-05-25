@@ -20,11 +20,11 @@ const Header = () => {
         }
         <li>
             {
-                user? <button className="btn btn-active btn-accent" onClick={logOut} >LOG OUT</button> : <Link to='/login'>SIGN IN</Link>
+                user? <button className="btn btn-active btn-accent text-white" onClick={logOut} >LOG OUT</button> : <Link to='/login'>SIGN IN</Link>
             }
         </li>
         {
-            user && <li className='my-4 ml-12'>{user?.email.slice(0,10)}</li>
+            user && <li className='my-4 ml-3'>{user?.email.slice(0,8)}</li>
         }
 
     </>
@@ -35,7 +35,7 @@ const Header = () => {
                     <label tabIndex="0" className="btn btn-secondary lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex="0" className="menu menu-compact dropdown-content ml-40">
                         {navItems}
                     </ul>
                 </div>
@@ -53,7 +53,7 @@ const Header = () => {
                     {navItems}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end lg:w-8">
             <label tabIndex="1" htmlFor="dashboard-side" className="btn btn-secondary lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>

@@ -3,13 +3,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
 
-const MyOrder = () => {
+const Manageorder = () => {
     const [products, setProducts] = useState([])
     const [user] = useAuthState(auth);
 
     useEffect(() => {
         if (user) {
-            const url = `http://localhost:5000/order?customerEmail=${user?.email}`
+            const url = `http://localhost:5000/allorder?customerEmail=${user?.email}`
             fetch(url)
                 .then(res => res.json())
                 .then(data => setProducts(data))
@@ -28,7 +28,7 @@ const MyOrder = () => {
           }).then((result) => {
 
         if (result.value) {
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `http://localhost:5000/allorder/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -56,11 +56,10 @@ const MyOrder = () => {
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Product name</th>
+                        <th>Product Name</th>
                         <th>Email</th>
-                        <th>quantity</th>
+                        <th>Phone Number</th>
                         <th>Prize</th>
-                        <th>Payment</th>
                         <th>Delete</th>
                     </tr>
                 </thead>
@@ -70,9 +69,8 @@ const MyOrder = () => {
                         <th>{index + 1}</th>
                         <td>{product.productName}</td>
                         <td>{product.customerEmail}</td>
-                        <td>{product.productQuantity}</td>
+                        <td>{product.phoneNumber}</td>
                         <td>{product.totalPrize}</td>
-                        <td><button className='btn btn-secondary'>Pay</button></td>
                         <td><button className='btn btn-accent' onClick={() => handleDelete(product._id)}>Delete</button></td>
                     </tr>
                         )
@@ -83,4 +81,4 @@ const MyOrder = () => {
     );
 };
 
-export default MyOrder;
+export default Manageorder;

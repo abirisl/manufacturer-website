@@ -5,7 +5,10 @@ import Login from './Page/Authentication/Login';
 import Register from './Page/Authentication/Register';
 import RequireAuth from './Page/Authentication/RequireAuth';
 import Blogs from './Page/Blogs/Blogs';
+import Addproduct from './Page/Dashboard/Addproduct';
 import Dashboard from './Page/Dashboard/Dashboard';
+import Manageorder from './Page/Dashboard/Manageorder';
+import Manageproduct from './Page/Dashboard/Manageproduct';
 import MyOrder from './Page/Dashboard/MyOrder';
 import MyReview from './Page/Dashboard/MyReview';
 import Footer from './Page/Footer/Footer';
@@ -34,6 +37,9 @@ function App() {
         }>
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path='review' element={<MyReview></MyReview>}></Route>
+          <Route path='manageorder' element={<Manageorder></Manageorder>}></Route>
+          <Route path='addproduct' element={<Addproduct></Addproduct>}></Route>
+          <Route path='manageproduct' element={<Manageproduct></Manageproduct>}></Route>
         </Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
