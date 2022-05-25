@@ -88,31 +88,31 @@ const Information = () => {
     }
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 my-24 mx-24 gap-5'>
-            <div class="card my-52 lg:max-w-xl  lg:card-side bg-base-100">
+            <div className="card my-52 lg:max-w-xl  lg:card-side bg-base-100">
                 <figure>
                     <img className='mx-8' src={product.img} alt="Album" />
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title text-4xl text-purple-400 font-bold mb-4">{product.name}</h2>
+                <div className="card-body">
+                    <h2 className="card-title text-4xl text-purple-400 font-bold mb-4">{product.name}</h2>
                     <p className='text-xl font-bold'>Stock: <span className='text-green-400'>{product.quantity}</span></p>
                     <p className='text-xl font-bold'>Menimum order: <span className='text-green-400'>30</span></p>
                     <div className="col-xl-1">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <button class="btn btn-outline-primary" type="button" onClick={decNum}>-</button>
+                        <div className="input-group">
+                            <div className="input-group-prepend">
+                                <button className="btn btn-outline-primary" type="button" onClick={decNum}>-</button>
                             </div>
-                            <input type="text" class="form-control w-12 text-center" value={num} onChange={handleChange} />
-                            <div class="input-group-prepend">
-                                <button class="btn btn-outline-primary" type="button" onClick={incNum}>+</button>
+                            <input type="text" className="form-control w-12 text-center" value={num} onChange={handleChange} />
+                            <div className="input-group-prepend">
+                                <button className="btn btn-outline-primary" type="button" onClick={incNum}>+</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="text-center text-3xl font-bold text-lime-300">Account of goods!!</h2>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    <h2 className="text-center text-3xl font-bold text-lime-300">Account of goods!!</h2>
                     <form onSubmit={handleOrder} className='mt-8 mx-12 text-xl'>
                         <h4 className='text-xl font-bold mb-2'>Name</h4>
                         <input type="text" name="name" placeholder='Your name' className="input input-bordered w-full max-w-xs" />
