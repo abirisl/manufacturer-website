@@ -2,10 +2,11 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const LoadProfile = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const [user] = useAuthState();
+    const [users] = useAuthState(auth);
 
     const imgStorageKey = 'ab4ebcd5f1e4f3b6eb095aa66b95920e';
 
@@ -25,7 +26,7 @@ const LoadProfile = () => {
             if(result.success){
                 const image = result.data.url;
                 const user ={
-                    email: user.email,
+                    email: users.email,
                     name: data.yourName,
                     phoneNumber: data.phoneNumber,
                     education: data.education,

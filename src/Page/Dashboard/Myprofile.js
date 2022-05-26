@@ -1,22 +1,25 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { BiEditAlt } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const MyProfile = () => {
     const [loadProfile, setLoadProfile] = useState([]);
+    const [user] = useAuthState(auth);
     
     useEffect(() => {
 
         const run = async () => {
-            await axios.get(`http://localhost:5000/myprofile/${email}`)
+            await axios.get(`http://localhost:5000/myprofile/${user.email}`)
                 .then(function (res) {
                 setLoadProfile(res.data)
             })
 
         }
         run()
-    }, [profiles, setLoadProfile])
+    }, [loadProfile, setLoadProfile])
     return (
         <div className='lg:my-12 card shadow-xl mt-5 mx-10'>
             <div className='flex navbar'>
