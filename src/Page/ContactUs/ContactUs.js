@@ -9,7 +9,7 @@ import {SiGmail} from 'react-icons/si';
 
 const ContactUs = () => {
     return (
-        <div className='lg:mx-24 my-24'>
+        <div className='lg:mx-28 my-24'>
             <div style={{background: '#5F9EA0'}} class="card lg:mx-40 bg-base-800 shadow-xl">
                 <div class="card-body">
                     <div className='mt-3 text-center'>
@@ -21,9 +21,9 @@ const ContactUs = () => {
                     <br />
                     <input type="text" placeholder="Information" class="input input-bordered w-full max-w-xs mt-5" />
                     <br />
-                    <textarea class="textarea textarea-bordered w-96 mt-5" placeholder="your message"></textarea>
+                    <textarea class="textarea textarea-bordered mt-5" placeholder="your message"></textarea>
                     <div class="card-actions justify-center">
-                        <button class="btn btn-primary mt-3 w-96">Send</button>
+                        <button class="btn btn-primary mt-3 w-80">Send</button>
                     </div>
                     </form>
                     
