@@ -11,7 +11,7 @@ const Information = () => {
     const [num, setNum] = useState(30);
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://murmuring-garden-88780.herokuapp.com/product/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data[0]))
@@ -65,7 +65,7 @@ const Information = () => {
         }
         console.log(order)
 
-        fetch(`http://localhost:5000/order/${id}`, {
+        fetch(`https://murmuring-garden-88780.herokuapp.com/order/${id}`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
