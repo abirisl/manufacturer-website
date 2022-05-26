@@ -24,3 +24,81 @@
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
 [error] 
 [error] Error: Failed to get Firebase project manufacturer-website-87c0c. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-05-26T12:45:20.709Z] ----------------------------------------------------------------------
+[debug] [2022-05-26T12:45:20.712Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-26T12:45:20.713Z] CLI Version:   10.6.0
+[debug] [2022-05-26T12:45:20.714Z] Platform:      win32
+[debug] [2022-05-26T12:45:20.714Z] Node Version:  v17.3.0
+[debug] [2022-05-26T12:45:20.716Z] Time:          Thu May 26 2022 18:45:20 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-26T12:45:20.716Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-26T12:45:20.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-26T12:45:20.882Z] > authorizing via signed-in user (mohammadmehedihasan84@gmail.com)
+[debug] [2022-05-26T12:45:20.882Z] [iam] checking project manufacturer-website-87c0c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-26T12:45:20.888Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions [none]
+[debug] [2022-05-26T12:45:20.888Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-26T12:45:22.748Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions 401
+[debug] [2022-05-26T12:45:22.748Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-05-26T12:45:22.749Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-05-26T12:45:22.751Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c [none]
+[debug] [2022-05-26T12:45:23.249Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c 401
+[debug] [2022-05-26T12:45:23.249Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-05-26T12:45:23.250Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-05-26T12:45:23.578Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project manufacturer-website-87c0c. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-05-26T12:46:40.619Z] ----------------------------------------------------------------------
+[debug] [2022-05-26T12:46:40.623Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-26T12:46:40.624Z] CLI Version:   10.6.0
+[debug] [2022-05-26T12:46:40.624Z] Platform:      win32
+[debug] [2022-05-26T12:46:40.624Z] Node Version:  v17.3.0
+[debug] [2022-05-26T12:46:40.626Z] Time:          Thu May 26 2022 18:46:40 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-26T12:46:40.626Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-26T12:46:40.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-26T12:46:40.802Z] > authorizing via signed-in user (mohammadmehedihasan84@gmail.com)
+[debug] [2022-05-26T12:46:40.803Z] [iam] checking project manufacturer-website-87c0c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-26T12:46:40.807Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions [none]
+[debug] [2022-05-26T12:46:40.808Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-26T12:46:42.554Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions 401
+[debug] [2022-05-26T12:46:42.554Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-05-26T12:46:42.556Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-05-26T12:46:42.558Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c [none]
+[debug] [2022-05-26T12:46:42.890Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c 401
+[debug] [2022-05-26T12:46:42.891Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-05-26T12:46:42.891Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-05-26T12:46:43.189Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project manufacturer-website-87c0c. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-05-26T12:49:21.699Z] ----------------------------------------------------------------------
+[debug] [2022-05-26T12:49:21.702Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-26T12:49:21.703Z] CLI Version:   10.6.0
+[debug] [2022-05-26T12:49:21.703Z] Platform:      win32
+[debug] [2022-05-26T12:49:21.703Z] Node Version:  v17.3.0
+[debug] [2022-05-26T12:49:21.705Z] Time:          Thu May 26 2022 18:49:21 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-26T12:49:21.705Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-26T12:49:21.854Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-26T12:49:21.854Z] > authorizing via signed-in user (mohammadmehedihasan84@gmail.com)
+[debug] [2022-05-26T12:49:21.855Z] [iam] checking project manufacturer-website-87c0c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-26T12:49:21.859Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions [none]
+[debug] [2022-05-26T12:49:21.859Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-26T12:49:23.603Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions 401
+[debug] [2022-05-26T12:49:23.604Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/manufacturer-website-87c0c:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-05-26T12:49:23.605Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-05-26T12:49:23.607Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c [none]
+[debug] [2022-05-26T12:49:23.956Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c 401
+[debug] [2022-05-26T12:49:23.957Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/manufacturer-website-87c0c {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-05-26T12:49:23.957Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-05-26T12:49:24.322Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\MH Abir Islam Abir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project manufacturer-website-87c0c. Please make sure the project exists and your account has permission to access it.
