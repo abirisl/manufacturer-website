@@ -17,7 +17,7 @@ const ReviewCard = () => {
         <div className='text-center'>
             <h2 className='text-4xl font-bold text-teal-400'>Our Reviews</h2>
             <div className='flex justify-center items-center my-12'>
-            <div class="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+            <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
                 {
                     reviews.map(review => <Review key={review._id} review={review}></Review>)
                 }

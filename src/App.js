@@ -3,13 +3,16 @@ import './App.css';
 import AllParts from './Page/AllParts/AllParts';
 import Login from './Page/Authentication/Login';
 import Register from './Page/Authentication/Register';
+import RequireAdmin from './Page/Authentication/RequireAdmin';
 import RequireAuth from './Page/Authentication/RequireAuth';
 import Blogs from './Page/Blogs/Blogs';
 import Addproduct from './Page/Dashboard/Addproduct';
 import Dashboard from './Page/Dashboard/Dashboard';
+import MakeAdmin from './Page/Dashboard/MakeAdmin';
 import Manageorder from './Page/Dashboard/Manageorder';
 import Manageproduct from './Page/Dashboard/Manageproduct';
 import MyOrder from './Page/Dashboard/MyOrder';
+import Myprofile from './Page/Dashboard/Myprofile';
 import MyReview from './Page/Dashboard/MyReview';
 import Footer from './Page/Footer/Footer';
 import Header from './Page/Header/Header';
@@ -35,11 +38,21 @@ function App() {
             <Dashboard></Dashboard>
           </RequireAuth>
         }>
-          <Route index element={<MyOrder></MyOrder>}></Route>
+          <Route index element={<Myprofile></Myprofile>}></Route>
+          <Route path='order' element={<MyOrder></MyOrder>}></Route>
           <Route path='review' element={<MyReview></MyReview>}></Route>
-          <Route path='manageorder' element={<Manageorder></Manageorder>}></Route>
-          <Route path='addproduct' element={<Addproduct></Addproduct>}></Route>
-          <Route path='manageproduct' element={<Manageproduct></Manageproduct>}></Route>
+          <Route path='manageorder' element={
+            <RequireAdmin><Manageorder></Manageorder></RequireAdmin>
+          }></Route>
+          <Route path='addproduct' element={
+            <RequireAdmin><Addproduct></Addproduct></RequireAdmin>
+          }></Route>
+          <Route path='manageproduct' element={
+            <RequireAdmin><Manageproduct></Manageproduct></RequireAdmin>
+          }></Route>
+          <Route path='makeadmin' element={
+            <RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>
+          }></Route>
         </Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<Login></Login>}></Route>

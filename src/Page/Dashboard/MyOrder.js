@@ -1,17 +1,33 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
 
 const MyOrder = () => {
     const [products, setProducts] = useState([])
     const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (user) {
             const url = `http://localhost:5000/order?customerEmail=${user?.email}`
-            fetch(url)
-                .then(res => res.json())
+            fetch(url, {
+                method: 'GET',
+                headers:{
+                    'authorization' : `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+                .then(res => {
+                    if(res.status === 401 || res.status === 403){
+                        signOut(auth);
+                        localStorage.removeItem('accessToken');
+                        navigate('/')
+                    }
+
+                    return res.json()
+                })
                 .then(data => setProducts(data))
         }
     }, [user]);
@@ -55,7 +71,7 @@ const MyOrder = () => {
             <table className="table w-full">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th>{products.length}</th>
                         <th>Product name</th>
                         <th>Email</th>
                         <th>quantity</th>

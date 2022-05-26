@@ -21,7 +21,7 @@ const Register = () => {
     const navigate = useNavigate();
 
     if(token){
-        navigate('/')
+        navigate('/dashboard')
     }
 
     let signError;

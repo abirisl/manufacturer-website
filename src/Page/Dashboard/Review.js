@@ -14,13 +14,13 @@ const Review = ({ review }) => {
 
     return (
 
-        <div class="carousel-item ">
-            <div class="card w-48 bg-base-100 shadow-xl">
+        <div className="carousel-item ">
+            <div className="card w-48 bg-base-100 shadow-xl">
                 <figure>
                     <img src={user?.photoURL} className='rounded-full mt-8' alt="User" />
                     </figure>
-                <div class="card-body">
-                    <h2 class="text-center font-bold text-xl">{name}</h2>
+                <div className="card-body">
+                    <h2 className="text-center font-bold text-xl">{name}</h2>
                     <p className='flex mx-5 mb-3'>{
                         stars.map((_, index) =>{
                            return(

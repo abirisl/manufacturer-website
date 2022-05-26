@@ -55,7 +55,7 @@ const Manageorder = () => {
             <table className="table w-full">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th>Total :({products.length})</th>
                         <th>Product Name</th>
                         <th>Email</th>
                         <th>Phone Number</th>
