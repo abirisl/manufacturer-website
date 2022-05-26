@@ -56,15 +56,15 @@ const MyProfile = () => {
                     </div>
                 </div>
                 <hr />
-            <div class="card lg:card-side bg-base-100 mb-5 mx-5">
+            <div className="card lg:card-side bg-base-100 mb-5 mx-5">
                 <figure>
-                <div class="avatar placeholder m-10">
-                        <div class="w-40 h-40 mt-5 rounded-full">
+                <div className="avatar placeholder m-10">
+                        <div className="w-40 h-40 mt-5 rounded-full">
                             {profile}
                         </div>
                     </div>
                     </figure>
-                <div class="card-body">
+                <div className="card-body">
                 <div>
                         <h2><span className='text-pink-400 font-bold'>Email:</span> {user.email}</h2>
                         <br />
