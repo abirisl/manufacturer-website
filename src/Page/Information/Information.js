@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
 
@@ -49,6 +49,7 @@ const Information = () => {
 
 
     const total2 = parseInt(num) * parseInt(product.prize);
+    const navigete = useNavigate();
 
     const handleOrder = event => {
         event.preventDefault();
@@ -83,6 +84,7 @@ const Information = () => {
                   )
                  
                }
+               navigete('/parts')
               
             })
 
@@ -116,7 +118,7 @@ const Information = () => {
                     <h2 className="text-center text-3xl font-bold text-lime-300">Account of goods!!</h2>
                     <form onSubmit={handleOrder} className='mt-8 mx-12 text-xl'>
                         <h4 className='text-xl font-bold mb-2'>Name</h4>
-                        <input type="text" name="name" placeholder='Your name' className="input input-bordered w-full max-w-xs" />
+                        <input type="text" name="name" placeholder='Your name' className="input input-bordered w-full max-w-xs" required/>
                         <h4 className='text-xl font-bold mb-2'>Email</h4>
                         <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
                         <h4 className='text-xl font-bold mb-2'>Phone number</h4>

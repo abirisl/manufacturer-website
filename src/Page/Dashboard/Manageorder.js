@@ -28,7 +28,7 @@ const Manageorder = () => {
           }).then((result) => {
 
         if (result.value) {
-            const url = `https://murmuring-garden-88780.herokuapp.com/allorder/${id}`;
+            const url = `https://murmuring-garden-88780.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

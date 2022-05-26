@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
-import Allproduct from './Allproduct';
 
 const Manageproduct = () => {
     const [products, setProducts] = useState([]);

@@ -8,12 +8,14 @@ import RequireAuth from './Page/Authentication/RequireAuth';
 import Blogs from './Page/Blogs/Blogs';
 import Addproduct from './Page/Dashboard/Addproduct';
 import Dashboard from './Page/Dashboard/Dashboard';
+import LoadProfile from './Page/Dashboard/LoadProfile';
 import MakeAdmin from './Page/Dashboard/MakeAdmin';
 import Manageorder from './Page/Dashboard/Manageorder';
 import Manageproduct from './Page/Dashboard/Manageproduct';
 import MyOrder from './Page/Dashboard/MyOrder';
 import Myprofile from './Page/Dashboard/Myprofile';
 import MyReview from './Page/Dashboard/MyReview';
+import Payment from './Page/Dashboard/Payment';
 import Footer from './Page/Footer/Footer';
 import Header from './Page/Header/Header';
 import Home from './Page/Home/Home';
@@ -39,7 +41,9 @@ function App() {
           </RequireAuth>
         }>
           <Route index element={<Myprofile></Myprofile>}></Route>
+          <Route path='myprofile/loadprofile' element={<LoadProfile></LoadProfile>}></Route>
           <Route path='order' element={<MyOrder></MyOrder>}></Route>
+          <Route path='payment/:id' element={<Payment></Payment>}></Route>
           <Route path='review' element={<MyReview></MyReview>}></Route>
           <Route path='manageorder' element={
             <RequireAdmin><Manageorder></Manageorder></RequireAdmin>

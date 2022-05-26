@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { FaStar } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
-import Review from './Review';
-import ReviewCard from './ReviewCard';
 
 const MyReview = () => {
     const stars = Array(5).fill(0);

@@ -42,7 +42,6 @@ const Addproduct = () => {
                     console.log(result);
                 })
             }
-            
         })
     }
     return (

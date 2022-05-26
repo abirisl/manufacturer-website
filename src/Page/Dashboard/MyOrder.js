@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
 
@@ -88,7 +88,10 @@ const MyOrder = () => {
                         <td>{product.customerEmail}</td>
                         <td>{product.productQuantity}</td>
                         <td>{product.totalPrize}</td>
-                        <td><button className='btn btn-secondary'>Pay</button></td>
+                        <td>
+                            {!product.paid && <Link to={`/dashboard/payment/${product._id}`}><button className='btn btn-secondary'>Pay</button></Link>}
+                            {product.paid && <span className='text-success'>paid</span>}
+                        </td>
                         <td><button className='btn btn-accent' onClick={() => handleDelete(product._id)}>Delete</button></td>
                     </tr>
                         )
