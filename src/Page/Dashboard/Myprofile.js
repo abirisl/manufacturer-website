@@ -12,7 +12,7 @@ const MyProfile = () => {
     useEffect(() => {
 
         const run = async () => {
-            await axios.get(`http://localhost:5000/myprofile/${user.email}`)
+            await axios.get(` https://manufacturer-website-87c0c.web.app/myprofile/${user.email}`)
                 .then(function (res) {
                 setLoadProfile(res.data)
             })

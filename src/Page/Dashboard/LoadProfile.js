@@ -33,7 +33,7 @@ const LoadProfile = () => {
                     img: image
                 }
 
-                const url = `http://localhost:5000/myprofile`;
+                const url = ` https://manufacturer-website-87c0c.web.app/myprofile`;
                 fetch(url, {
                     method: 'POST',
                     body: JSON.stringify(user),
