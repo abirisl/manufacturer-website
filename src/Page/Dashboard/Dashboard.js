@@ -20,10 +20,14 @@ const Dashboard = () => {
                     <li><Link to='/dashboard'>My Profile</Link></li>
                     {!admin && <li><Link to='/dashboard/order'>My Orders</Link></li>}
                     {!admin && <li><Link to='/dashboard/review'>Add a Review</Link></li>}
-                    { admin && <li><Link to='/dashboard/manageorder'>Manage All Order</Link></li>}
-                    { admin && <li><Link to='/dashboard/makeadmin'>Make Admin</Link></li>}
-                    { admin && <li><Link to='/dashboard/addproduct'>Add A Products</Link></li>}
-                    { admin && <li><Link to='/dashboard/manageproduct'>Manage Products</Link></li>}
+                    {
+                        admin && <>
+                            <li><Link to='/dashboard/manageorder'>Manage All Order</Link></li>
+                            <li><Link to='/dashboard/makeadmin'>Make Admin</Link></li>
+                            <li><Link to='/dashboard/addproduct'>Add A Products</Link></li>
+                            <li><Link to='/dashboard/manageproduct'>Manage Products</Link></li>
+                        </>
+                    }
                 </ul>
 
             </div>
