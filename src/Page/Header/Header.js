@@ -30,7 +30,7 @@ const Header = () => {
 
     </>
     return (
-        <div className="navbar bg-stone-400">
+        <div className="navbar bg-[#1ca1b0]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-secondary lg:hidden">
@@ -41,16 +41,16 @@ const Header = () => {
                     </ul>
                 </div>
 
-                <Link to='/' className="btn btn-ghost text-2xl uppercase">
+                <Link to='/' className="cursor-pointer flex text-3xl uppercase">
 
                     <div className="w-14">
                         <img src="https://i.ibb.co/3CS5Yhn/logo-4.png" alt='' />
                     </div>
 
-                    <span className='text-pink-600'>Auto house</span></Link>
+                    <span className='text-[#b01c70] font-bold mt-3'>Auto house</span></Link>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal p-0">
+                <ul className="menu menu-horizontal p-0 text-white font-bold">
                     {navItems}
                 </ul>
             </div>
