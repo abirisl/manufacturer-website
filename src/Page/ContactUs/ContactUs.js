@@ -1,8 +1,4 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
-// import { faPhone } from '@fortawesome/free-solid-svg-icons';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { AiTwotonePhone } from 'react-icons/ai';
 import { AiFillHome } from 'react-icons/ai';
 import { SiGmail } from 'react-icons/si';
