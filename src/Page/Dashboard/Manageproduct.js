@@ -13,7 +13,7 @@ const Manageproduct = () => {
     useEffect(() => {
 
         const getItem = async () => {
-            const url = `https://murmuring-garden-88780.herokuapp.com/manageproduct`;
+            const url = `https://manufacture-server-side.onrender.com/manageproduct`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -44,7 +44,7 @@ const Manageproduct = () => {
         }).then((result) => {
 
             if (result.value) {
-                const url = `https://murmuring-garden-88780.herokuapp.com/product/${id}`;
+                const url = `https://manufacture-server-side.onrender.com/product/${id}`;
                 console.log(url)
                 fetch(url, {
                     method: 'DELETE'

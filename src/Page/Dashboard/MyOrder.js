@@ -12,7 +12,7 @@ const MyOrder = () => {
 
     useEffect(() => {
         if (user) {
-            const url = `https://murmuring-garden-88780.herokuapp.com/order?customerEmail=${user?.email}`
+            const url = `https://manufacture-server-side.onrender.com/order?customerEmail=${user?.email}`
             fetch(url, {
                 method: 'GET',
                 headers:{
@@ -44,7 +44,7 @@ const MyOrder = () => {
           }).then((result) => {
 
         if (result.value) {
-            const url = `https://murmuring-garden-88780.herokuapp.com/order/${id}`;
+            const url = `https://manufacture-server-side.onrender.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

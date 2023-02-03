@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserAdminControl from './UserAdminControl';
 
 const MakeAdmin = () => {
-    const { data: users, isLoading, refetch } = useQuery('user', () => fetch('https://murmuring-garden-88780.herokuapp.com/user', {
+    const { data: users, isLoading, refetch } = useQuery('user', () => fetch('https://manufacture-server-side.onrender.com/user', {
         method: 'GET',
         headers:{
             authorization : `Bearer ${localStorage.getItem('accessToken')}`

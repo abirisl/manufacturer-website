@@ -15,7 +15,7 @@ const CheckoutFrom = ({ product }) => {
 
     useEffect(() => {
 
-        fetch('https://murmuring-garden-88780.herokuapp.com/create-payment-intent', {
+        fetch('https://manufacture-server-side.onrender.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -80,7 +80,7 @@ const CheckoutFrom = ({ product }) => {
                 product : _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://murmuring-garden-88780.herokuapp.com/order/${_id}`, {
+            fetch(`https://manufacture-server-side.onrender.com/order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

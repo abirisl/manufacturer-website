@@ -28,7 +28,7 @@ const Addproduct = () => {
                     img: image
                 }
 
-                const url = `https://murmuring-garden-88780.herokuapp.com/addproduct`;
+                const url = `https://manufacture-server-side.onrender.com/addproduct`;
                 fetch(url, {
                     method: 'POST',
                     body: JSON.stringify(product),

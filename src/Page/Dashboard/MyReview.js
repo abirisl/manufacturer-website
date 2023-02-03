@@ -31,7 +31,7 @@ const MyReview = () => {
             customerFeedback: feedback
         }
 
-        fetch(`https://murmuring-garden-88780.herokuapp.com/review/${id}`, {
+        fetch(`https://manufacture-server-side.onrender.com/review/${id}`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

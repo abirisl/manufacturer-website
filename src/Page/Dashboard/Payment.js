@@ -12,7 +12,7 @@ const stripePromise = loadStripe('pk_test_51L42E3KpCfeDjJCAhXqtEWyaXoq7sqI3sCrzq
 const Payment = () => {
     const { id } = useParams();
 
-    const url = `https://murmuring-garden-88780.herokuapp.com/order/${id}`;
+    const url = `https://manufacture-server-side.onrender.com/order/${id}`;
 
     const { data: product, isLoading } = useQuery(['order', id], () => fetch(url, {
         method: 'GET',

@@ -6,7 +6,7 @@ const useProducts = () =>{
     const [products,setProducts] = useState([]);
 
     useEffect(() =>{
-        fetch('https://murmuring-garden-88780.herokuapp.com/product')
+        fetch('https://manufacture-server-side.onrender.com/product')
         .then(res => res.json())
         .then(data => setProducts(data))
     }, [])

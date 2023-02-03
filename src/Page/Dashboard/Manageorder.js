@@ -9,7 +9,7 @@ const Manageorder = () => {
 
     useEffect(() => {
         if (user) {
-            const url = `https://murmuring-garden-88780.herokuapp.com/allorder?customerEmail=${user?.email}`
+            const url = `https://manufacture-server-side.onrender.com/allorder?customerEmail=${user?.email}`
             fetch(url)
                 .then(res => res.json())
                 .then(data => setProducts(data))
@@ -28,7 +28,7 @@ const Manageorder = () => {
           }).then((result) => {
 
         if (result.value) {
-            const url = `https://murmuring-garden-88780.herokuapp.com/order/${id}`;
+            const url = `https://manufacture-server-side.onrender.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
